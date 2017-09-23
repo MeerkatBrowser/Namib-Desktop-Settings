@@ -10,10 +10,6 @@ source=("git+$url.git")
 sha256sums=('SKIP')
 install=$pkgname.install
 
-pkgver() {
-	date +%Y%m%d
-}
-
 package() {
     install -d ${pkgdir}/etc/skel_new
     cp -r ${srcdir}/namib-desktop-settings/etc/skel_new/ "${pkgdir}/etc/"
