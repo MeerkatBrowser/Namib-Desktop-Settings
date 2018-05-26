@@ -6,7 +6,7 @@ arch=('any')
 url="https://github.com/MeerkatBrowser/namib-desktop-settings"
 license=('GPL')
 makedepends=('git')
-depends=('firefox' 'bash' 'xorg')
+depends=('firefox' 'bash' 'xorg-server')
 source=("git+$url.git")
 sha256sums=('SKIP')
 
