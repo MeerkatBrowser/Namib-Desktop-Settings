@@ -6,11 +6,12 @@ arch=('any')
 url="https://github.com/MeerkatBrowser/namib-desktop-settings"
 license=('GPL')
 makedepends=('git')
+depends=('firefox' 'bash' 'xorg')
 source=("git+$url.git")
 sha256sums=('SKIP')
-install=$pkgname.install
 
 package() {
-    install -d ${pkgdir}/etc/skel_new
-    cp -r ${srcdir}/namib-desktop-settings/etc/skel_new/ "${pkgdir}/etc/"
+    install -d ${pkgdir}/etc/skel
+
+    cp -r ${srcdir}/namib-desktop-settings/etc/skel/. "${pkgdir}/etc/skel/"
 }
