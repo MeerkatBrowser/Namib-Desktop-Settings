@@ -1,0 +1,17 @@
+  
+post_upgrade() {
+    post_install $1
+}
+
+pre_upgrade() {
+    pre_install $1
+}
+
+pre_install() {
+    \rm -rf /etc/skel_base
+}
+
+post_install() {
+    \cp /etc/skel_base/.bash_profile /etc/skel/.bash_profile
+}
+
