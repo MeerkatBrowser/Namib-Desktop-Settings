@@ -13,5 +13,7 @@ pre_install() {
 
 post_install() {
     \cp /etc/skel_base/.bash_profile /etc/skel/.bash_profile
+	\mkdir -p /root/.config/qt5ct/
+	\cp /etc/skel/.config/qt5ct/qt5ct.cfg /root/.config/qt5ct/qt5ct.cfg
 }
 

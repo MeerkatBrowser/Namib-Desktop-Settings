@@ -1,12 +1,12 @@
 pkgname=namib-base-skel
 pkgdesc='Namib base skeleton files'
-pkgver=18.02
+pkgver=18.05
 pkgrel=1
 arch=('any')
 url="https://github.com/MeerkatBrowser/namib-desktop-settings"
 license=('GPL')
 makedepends=('git')
-optdepends=('firefox' 'bash' 'xorg-server' 'qt5ct')
+depends=('firefox' 'bash' 'xorg-server' 'qt5ct')
 source=("git+$url.git")
 sha256sums=('SKIP')
 install=$pkgname.install
