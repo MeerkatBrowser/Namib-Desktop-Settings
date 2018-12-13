@@ -1,7 +1,7 @@
 pkgname=namib-base-skel
 pkgdesc='Namib base skeleton files'
 pkgver=18.08
-pkgrel=1
+pkgrel=2
 arch=('any')
 url="https://github.com/MeerkatBrowser/namib-desktop-settings"
 license=('GPL')
